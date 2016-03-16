@@ -9,6 +9,28 @@ void printMenu(){
   printf("\t3.Exit");
   printf("Type Option: ");
 
+}
 
+int menu(){
+  char choice;
+  int numReturn=0;
 
+  do{
+    printMenu();
+    scanf("%c", &choice);
+
+    switch(choice){
+      case'1':
+        numReturn 1;
+      case'2':
+        numReturn 2;
+
+    }
+  }while(numReturn!=0||numReturn!=1);
+
+  return numReturn;
+}
+
+int main(int argc, char *argv[]){
+  menu();
 }
