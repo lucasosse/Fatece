@@ -1,0 +1,2 @@
+to compile with -lm:
+	gcc -o prog prog.c -lm
