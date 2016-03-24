@@ -1,2 +1,5 @@
 to compile with -lm:
 	gcc -o prog prog.c -lm
+
+for loops:
+	no need to increment counter, does it on its own with parmeter
