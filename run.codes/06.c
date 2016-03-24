@@ -15,13 +15,13 @@ float res = 0;
 
     if(i==0){
       scanf("%f %f", &p[i], &p[i+1]);
-      scanf("%f %f", &q[i], &q[i+1]);
       //printf("passed scan\n");
       res = (p[i]-q[i])*(p[i]-q[i]);
       //printf("passed equation, result: %f",res);
       //i++;
       //printf("passed incrementer");
     }else{
+      scanf("%f %f", &q[i], &q[i+1]);
       //printf("looped once");
       //scanf("%f %f", &p[i+2], &p[i+3]);
       //scanf("%f %f", &q[i+2], &q[i+3]);
