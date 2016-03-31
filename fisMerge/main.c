@@ -3,7 +3,7 @@
 int main(int argc, char *argv[])
 {
     VECTOR v;
-    init_vector(&v);
-    
+    menu();
+
     return 0;
 }
