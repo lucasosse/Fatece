@@ -13,14 +13,18 @@ float kph, mps=0, modulo_vet;
 double angle;
 VECTOR vet;
 
-  printf("menu prototype\n");//printa o menu bonito
+  printf("Bem Vindo a API de Fisica, Etapa 2!\n");//printa o menu bonito
+  printf("-----------Escolha Operacao--------\n");
+  printf("1.Decomposicao de Vetor\n");
+  printf("2.Calculador de Distancia\n");
+  printf("3.Conversor de K/H para M/S\n");
   scanf("%d", &choice);
 
   switch(choice){
 
     case 1:
       init_vector(&vet);
-      printf("Digite um angulo: \n");
+      printf("Digite um Angulo: \n");
       scanf("%d", &angle);
       printf("Digite Modulo:\n");
       scanf("%d", &modulo_vet);
@@ -28,17 +32,17 @@ VECTOR vet;
       break;
 
     case 2:
-      printf("Type Speed: \n");
+      printf("Digite Velocidade: \n");
       scanf("%f", &speed);
-      printf("Type Velocity: \n");
+      printf("Digite Aceleracao: \n");
       scanf("%f", &velocity);
-      printf("Type Time: \n");
+      printf("Digite Tempo: \n");
       scanf("%f", &course_time);
       calcDis(speed, velocity, course_time, dist);
       break;
 
     case 3:
-      printf("Type KPH: ");
+      printf("Digite K/H: ");
       scanf("%f", &kph);
       kmp2mps(kph, mps);
       break;
