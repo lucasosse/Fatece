@@ -6,14 +6,14 @@ void printMenu(){
   printf("\t\t====WELCOME TO MINEFIELD===\n");
   printf("\t1.Start Game\n");
   printf("\t2.??\n");
-  printf("\t3.Exit");
+  printf("\t3.Exit\n");
   printf("Type Option: ");
 
 }
 
 int menu(){
   char choice;
-  int numReturn=0;
+  int numReturn,breakLoop=0;
 
   do{
     printMenu();
@@ -21,12 +21,16 @@ int menu(){
 
     switch(choice){
       case'1':
-        numReturn 1;
-      case'2':
-        numReturn 2;
+        numReturn=1;
+        breakLoop=1;
+        break;
+      case'0':
+        numReturn=2;
+        breakLoop=1;
+        break;
 
     }
-  }while(numReturn!=0||numReturn!=1);
+  }while(!breakLoop);
 
   return numReturn;
 }

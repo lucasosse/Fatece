@@ -1,5 +1,14 @@
 to compile with -lm:
 	gcc -o prog prog.c -lm
 
+to compile MODULARIZED PROGS:
+	gcc -c main.c -o main.o
+	gcc -c imp_funcs.c -o imp_funcs.o
+	gcc  main.o imp_funcs.o -o exec_file
+
+#generate object files
+#link them with executable
+#no need to mess with 'includes.h'
+
 for loops:
 	no need to increment counter, does it on its own with parmeter
