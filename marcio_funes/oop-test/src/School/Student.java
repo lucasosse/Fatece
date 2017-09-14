@@ -3,10 +3,11 @@
  */
 package School;
 
-/**
- * @author estagio
- *
- */
 public class Student {
+		
+	String name;
+	int id;
+	int age;
+	int ssn;
 
 }
